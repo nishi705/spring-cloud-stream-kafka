@@ -8,7 +8,7 @@ import org.springframework.messaging.SubscribableChannel;
 public interface GreetingsStream {
     String INPUT = "greetings-in";
     String OUTPUT = "greetings-out";
-    @Input("greetings-in")
+    @Input(INPUT)
     SubscribableChannel inboundGreetings();
     @Output(OUTPUT)
     MessageChannel outboundGreetings();

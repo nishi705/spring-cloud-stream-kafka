@@ -11,7 +11,7 @@ import org.springframework.util.MimeTypeUtils;
 @Service
 @Slf4j
 public class SpringCloudService {
-    @Autowired
+
     private final GreetingsStream greetingsStreams;
 
     public SpringCloudService(GreetingsStream greetingsStreams) {
