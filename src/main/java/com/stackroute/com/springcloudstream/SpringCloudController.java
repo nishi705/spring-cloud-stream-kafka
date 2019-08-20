@@ -17,7 +17,7 @@ public class SpringCloudController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void greetings(@RequestParam("message") String message) {
         Greetings greetings = Greetings.builder()
-                .message(message)
+                .message(message.toUpperCase())
                 .timestamp(System.currentTimeMillis())
                 .build();
         greetingsService.sendGreeting(greetings);
